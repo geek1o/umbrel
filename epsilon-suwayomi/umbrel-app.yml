@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: epsilon-suwayomi
+name: Suwayomi
+tagline: Read manga - self-hosted server for Mihon/Tachiyomi extensions
+icon: https://jakubmedia.com/umbrel/suwayomi.png
+category: media
+version: "preview"
+port: 4567
+description: >-
+  Suwayomi is a free and open source manga reader server that runs extensions
+  built for Mihon (Tachiyomi).
+
+  Install sources as extensions, browse and search your library from the built-in
+  web UI, download chapters for offline reading, and sync progress with trackers
+  such as MyAnimeList, AniList, Kitsu and Bangumi. An OPDS endpoint lets external
+  readers pull chapters directly from the server.
+
+  Suwayomi is independent software compatible with Mihon (Tachiyomi) — it is not a fork.
+
+developer: Suwayomi
+website: https://suwayomi.org
+submitter: GeekIO
+submission: https://github.com/Suwayomi/Suwayomi-Server
+repo: https://github.com/Suwayomi/Suwayomi-Server
+support: https://github.com/Suwayomi/Suwayomi-Server/issues
+gallery: []
+releaseNotes: ""
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

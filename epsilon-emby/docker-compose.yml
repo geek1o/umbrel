@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: emby_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: xinjiawei1/emby_unlockd:latest
+    environment:
+      TZ: Europe/Moscow
+      UID: 1000
+      GID: 1000
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config:rw
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads

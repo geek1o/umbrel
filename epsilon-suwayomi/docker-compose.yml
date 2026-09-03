@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: epsilon-suwayomi_server_1
+      APP_PORT: 4567
+
+  server:
+    image: ghcr.io/suwayomi/suwayomi-server:v2.3.2243
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - TZ=Europe/Moscow
+    volumes:
+      - ${APP_DATA_DIR}/data/downloads:/home/suwayomi/.local/share/Tachidesk/downloads
+      - ${APP_DATA_DIR}/data:/home/suwayomi/.local/share/Tachidesk
