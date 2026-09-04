@@ -2,7 +2,7 @@ manifestVersion: 1
 id: epsilon-suwayomi
 name: Suwayomi
 tagline: Read manga - self-hosted server for Mihon/Tachiyomi extensions
-icon: https://jakubmedia.com/umbrel/suwayomi.png
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/suwayomi.svg
 category: media
 version: "preview"
 port: 4567
